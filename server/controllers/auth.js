@@ -21,7 +21,7 @@ export const register = async (req, res) => {
       return res.status(400).json("Please enter a valid email");
     }
     if (!password || !validatePassword(password.trim())) {
-      return resres
+      return res
         .status(400)
         .send(
           "Password is required and should contain minimum 8 characters and contain atleast one capital letter and special character"
